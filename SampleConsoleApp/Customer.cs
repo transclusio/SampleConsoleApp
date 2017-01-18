@@ -11,12 +11,14 @@ namespace SampleConsoleApp
         public String FName { get; set; }
         public String Lname { get; set; }
         public double Salary { get; set; }
+        public DateTime CreatedAt { get; set; }
 
         public Customer()
         {
             this.FName = "";
             this.Lname = "";
             this.Salary = 0;
+            this.CreatedAt = DateTime.Now;
         }
 
         public Customer(string fname, string lname, double salary)
@@ -24,6 +26,7 @@ namespace SampleConsoleApp
             this.FName = fname;
             this.Lname = lname;
             this.Salary = salary;
+            this.CreatedAt = DateTime.Now;
         }
 
         public override string ToString()
